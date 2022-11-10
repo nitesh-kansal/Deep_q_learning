@@ -8,9 +8,9 @@
 This repository provides python implementation of Deep Q-Learning Methods for solving various RL based problems in which the states, actions, rewards are related by a transition probability distribution which is stationary in time (i.e. not changing over time and hence there is a single optimal policy to be found). The repository can currently be used to solve (maximize total expected reward)  environments (simulated or real) where the states are representated as n dimensional continuous features and actions take any of the known 'k' discrete values. The methods implemented in this repository are proven to perform at near human levels on various Atari games.
 
 You can find easy to use implementation of vanilla Deep Q-Network (DQN) algorithm (from the early DeepMind [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)) and some of the early notable improvements over the basic method e.g.
-- Double DQN model [click_here](https://arxiv.org/pdf/1509.06461.pdf).
-- Prioritized Replay [click_here](https://arxiv.org/pdf/1511.05952.pdf).
-- Dueling Architecture DQN[click_here](https://arxiv.org/abs/1511.06581).
+- Double DQN model: [click_here](https://arxiv.org/pdf/1509.06461.pdf).
+- Prioritized Replay: [click_here](https://arxiv.org/pdf/1511.05952.pdf).
+- Dueling Architecture DQN: [click_here](https://arxiv.org/abs/1511.06581).
 - And More coming.
     
 There are example notebooks in repository in which we have show how to use the repository in order to solve some of the challenging environments available in OpenAI Gym and Unity ML-Agents. Furthermore, in this repository you can easily choose the improvements which you want to keep and switch the unwanted once off while training the Agent.
