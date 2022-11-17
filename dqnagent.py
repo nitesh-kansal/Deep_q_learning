@@ -95,7 +95,7 @@ class DQNAgent():
         
         # Epsilon-greedy action selection
         action_values = action_values.cpu().data.numpy()[0,:]
-        policy = (action_values/action_values)*eps/action_values.shape[0]
+        policy = np.ones(shape=action_values.shape)*eps/action_values.shape[0]
         policy[np.argmax(action_values)] += 1. - eps
         action = np.random.choice(action_values.shape[0], p = policy)
         if action == np.argmax(policy):
