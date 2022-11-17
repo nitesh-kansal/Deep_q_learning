@@ -14,7 +14,7 @@ class QNetwork(nn.Module):
             seed (int): Random seed
         """
         super(QNetwork, self).__init__()
-        self.seed = torch.manual_seed(seed)
+        #self.seed = torch.manual_seed(seed)
         
         self.is_dueling = is_dueling
         self.layers = nn.ModuleList([])
@@ -60,7 +60,7 @@ class QNetworkPixel(nn.Module):
             seed (int): Random seed
         """
         super(QNetworkPixel, self).__init__()
-        self.seed = torch.manual_seed(seed)
+        #self.seed = torch.manual_seed(seed)
         self.is_dueling = is_dueling
         
         # first conv block
