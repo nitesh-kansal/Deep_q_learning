@@ -61,7 +61,7 @@ class DQNAgent():
         Params
         ======
             state (array_like): current state
-            eps (float): epsilon, for epsilon-greedy action selection
+            t (float): temperature for annealed softmax action selection
         """
         state = torch.from_numpy(state).float().to(device)
         self.qnetwork_local.eval()
